@@ -13,7 +13,7 @@
 @import url(../css/utils/common.css);
 
 body {
-  /* background: #171717; */
+  background: #171717;
 }
 
 .main-section {
@@ -36,133 +36,67 @@ body {
 }
 
 .container {
-  padding: 100px 0 20px;
+  padding: 40px 0 20px;
   max-width: 430px;
   margin: 0 auto;
 }
 
 /*  */
 
-.short-text-container {
-  position: absolute;
-  left: 0;
-  top: 0;
-
-  width: 100%;
-
-  padding: 14px;
-  border-radius: 5px;
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(2.3813083171844482px);
-}
-
-.short-text {
-  color: rgba(255, 255, 255, 0.7);
+.short-info {
+  color: #fff;
   text-align: center;
   font-family: 'Futura PT';
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.48px;
-  text-transform: lowercase;
+  font-weight: 450;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.54px;
 
-  max-width: 320px;
-  margin: 0 auto;
+  max-width: 330px;
+  margin: 0 auto 16px auto;
 }
 
 .title {
   text-align: center;
-  font-family: Benzin-Semibold;
-  font-size: 38px;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 32px;
   font-style: normal;
   font-weight: 400;
-  line-height: 105%; /* 39.9px */
-  letter-spacing: -0.76px;
+  line-height: 100%; /* 32px */
+  letter-spacing: -0.64px;
   text-transform: uppercase;
 
-  background: linear-gradient(90deg, #979797 0%, #e4e4e4 50%, #979797 100%);
+  background: linear-gradient(90deg, #f3ba0e 0%, #ffeb80 50%, #f3ba0e 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  margin-bottom: 24px;
+  max-width: 320px;
+  margin: 0 auto 100px auto;
 }
 
-.subtitle {
+.list-title {
   color: #fff;
   text-align: center;
   font-family: 'Futura PT';
   font-size: 24px;
   font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 24px */
-  letter-spacing: -0.72px;
-
-  max-width: 329px;
-  margin: 0 auto 10px auto;
-}
-
-.develop-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 228px;
-  height: 70px;
-
-  margin: 0 auto 48px auto;
-
-  background-image: url(../img/bg-develop.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.develop-text {
-  color: #fff;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
   font-weight: 300;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.32px;
+  line-height: 95%; /* 22.8px */
+  letter-spacing: -0.24px;
 
-  max-width: 161px;
-  margin: 0 auto;
+  max-width: 265px;
+  margin: 0 auto 20px auto;
 }
 
-.learn-title {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.16px;
-
-  max-width: 260px;
-  margin: 0 auto 16px auto;
-}
-
-.learn-title span {
-  color: #fff;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 100%;
-  letter-spacing: -0.16px;
-}
-
-.learn-list {
+.list {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
   justify-content: center;
 
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .list-item {
@@ -172,19 +106,12 @@ body {
   align-items: center;
   justify-content: center;
 
-  max-width: 100%;
-  width: 158px;
-  height: 80px;
-  padding: 18px 11px;
+  height: 72px;
+  max-width: 158px;
+  width: 100%;
 
-  color: #fff;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 14px */
-  letter-spacing: -0.42px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
 }
 
 .list-item::before {
@@ -198,9 +125,9 @@ body {
   border: 1px solid transparent;
   background: linear-gradient(
       90deg,
-      #cbcbcb 0%,
+      #ffeb80 0%,
       rgba(255, 225, 112, 0.03) 50%,
-      #cbcbcb 100%
+      #ffeb80 100%
     )
     border-box;
   mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
@@ -208,43 +135,106 @@ body {
   mask-composite: exclude;
 }
 
-.btn {
-  display: block;
-
-  color: #fff;
-  text-align: center;
-  font-family: 'Futura PT';
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 450;
-  line-height: 100%; /* 16px */
-  letter-spacing: -0.48px;
-  text-transform: uppercase;
-
-  padding: 32px 18px;
-  border-radius: 100px;
-  background: linear-gradient(90deg, #a70300 0%, #e50300 50%, #a70300 100%);
-
+.list-item:last-child {
   max-width: 320px;
-  margin: 0 auto 12px auto;
 }
 
-.desc {
-  color: rgba(255, 255, 255, 0.8);
+.item-text {
+  color: #fff;
   text-align: center;
   font-family: 'Futura PT';
   font-size: 14px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 100%; /* 14px */
   letter-spacing: -0.42px;
+
+  max-width: 136px;
 }
 
-.right-now {
-  margin-bottom: 10px;
+.list-item:last-child .item-text {
+  max-width: 200px;
 }
 
-.recomend {
-  max-width: 290px;
+.write-wrapper {
+  padding: 50px 40px;
+  border-radius: 50px 50px 0px 0px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.write-title {
+  text-align: center;
+  font-family: 'Bebas Neue Cyrillic';
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90%; /* 37.8px */
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #ffba1f 0%, #ffe170 50%, #ffba1f 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  margin-bottom: 2px;
+}
+
+.write-text {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.36px;
+
+  max-width: 298px;
+  margin: 0 auto 40px auto;
+}
+
+.write-text span {
+  font-weight: 500;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 100%; /* 18px */
+  letter-spacing: -0.54px;
+  text-transform: uppercase;
+
+  padding: 32px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #ac0000 0%, #e00 50%, #ac0000 100%);
+
+  max-width: 320px;
+  margin: 0 auto 16px auto;
+}
+
+.important {
+  color: #fff;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.28px;
+
+  max-width: 201px;
   margin: 0 auto;
+}
+
+.accent1 {
+  font-weight: 500;
+}
+
+.count {
+  color: #fde16b;
 }
