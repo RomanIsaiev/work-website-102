@@ -16,6 +16,18 @@ body {
   background: #171717;
 }
 
+@keyframes pulseScale {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.07;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
 .main-section {
   background-image: url(../img/background-1x.jpg);
   background-repeat: no-repeat;
@@ -215,6 +227,8 @@ body {
 
   max-width: 320px;
   margin: 0 auto 16px auto;
+
+  animation: pulseScale 2000ms infinite;
 }
 
 .important {
