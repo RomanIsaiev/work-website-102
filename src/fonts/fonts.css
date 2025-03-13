@@ -13,12 +13,18 @@
 @font-face {
   font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-MEDIUM.TTF);
-  font-weight: 500;
+  font-weight: 450;
 }
 
 @font-face {
   font-family: 'Futura PT';
   src: url(../fonts/FUTURAPT-DEMI.TTF);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Futura PT';
+  src: url(../fonts/FUTURAPT-HEAVY.TTF);
   font-weight: 600;
 }
 
@@ -29,13 +35,7 @@
 }
 
 @font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-EXTRABOLD.TTF);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: 'Futura PT';
-  src: url(../fonts/FUTURAPT-HEAVY.TTF);
-  font-weight: 900;
+  font-family: 'Benzin-Semibold';
+  src: url(../fonts/Benzin-Semibold.ttf);
+  font-weight: 600;
 }
